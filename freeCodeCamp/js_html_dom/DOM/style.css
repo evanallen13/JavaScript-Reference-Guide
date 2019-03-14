@@ -1,0 +1,11 @@
+body{
+    background: PapayaWhip;
+}
+div{
+    color: white;
+    background: RebeccaPurple;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding-top: 25px;
+}
