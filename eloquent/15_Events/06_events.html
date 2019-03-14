@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <p>Paragrpah with a Button<button>button</button></p>
+<body>
+    <script>
+        let para = document.querySelector('p');
+        let button = document.querySelector('button');
+
+        para.addEventListener('mouseDown', event => {
+            console.log("Handler for Button.");
+            if(event.button == 2) event.stopPropagation();
+            });
+    </script>
+    
+</body>
+</html>

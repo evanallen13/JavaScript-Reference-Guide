@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>If you go chasing
+        <span class="animal">rabbits</span>
+    </p>
+    <p>And you know you're going to fall</p>
+    <p>Tell 'em a <span class="character">hookah</span></p>
+    <p>HAs given you the call.</p>
+<script>
+    function count(selector){
+        return document.querySelectorAll(selector).length;
+    }
+    console.log(count("p .animal"))
+    console.log(count("span"))
+</script>
+</body>
+</html>
