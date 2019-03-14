@@ -1,0 +1,10 @@
+body{
+    background: papayawhip;
+}
+.box{
+    background: rebeccapurple;
+    color: lightgoldenrodyellow;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+}
