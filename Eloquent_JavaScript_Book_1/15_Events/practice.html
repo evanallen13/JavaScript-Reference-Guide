@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loading</h1>
+    <div onclick="grow()" style="background: orange; height: 20px;">
+    </div>
+    <script>
+        let w = 20
+        document.querySelector('div').style.width = w + 'px';
+
+        let timing = function(){
+            setTimeout(() => {document.querySelector('div').style.width = w + 'px';},5000);  
+        }
+        let grow = function(){
+            for(i=0; i < 10; ++i){
+                w = w + 10;
+                console.log(w);
+            }
+        };
+
+
+    </script>
+</body>
+</html>

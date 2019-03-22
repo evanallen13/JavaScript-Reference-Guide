@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current</title>
+</head>
+<body>
+    <script>
+    // \d any digit 
+    // \w any wrod character a-z A-Z 0-9 _'s
+    // \s whitespace
+    // \t tab
+
+    let regex = /\d{3}\s\w{5}/ig
+    let string = '123 ninja'
+
+    console.log(regex.test(string));
+
+    </script>
+</body>
+</html>

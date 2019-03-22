@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = "gmail Gmail cmail";
+        let regex = /[gc]mail/ig
+
+        // has to have one of the leters AND one of the numbers
+        let reg = /[abc123]/;
+        // console.log(reg.test('a000'));
+        // console.log(reg.test('c000'));
+        // console.log(reg.test('3000'));
+        // console.log(reg.test('e000'));
+
+        // Except these 
+        let regg = /[^p]\d\d\d/;
+        console.log(regg.test('p500'))
+        console.log(regg.test('a000'));
+        console.log(regg.test('c000'));
+        console.log(regg.test('3000'));
+
+    </script>
+</body>
+</html>

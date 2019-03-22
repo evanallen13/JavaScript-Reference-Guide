@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id='btn-blue' onclick="blue()">Blue</button>
+    <p>🎈</p>
+    <button onclick="purple()">Purple</button>
+    <button onclick="green()">Green</button>
+    <style>
+        body{ 
+            height: 200px;
+            background: beige;
+        }
+        .dot{
+            height: 8px;
+            width: 8px;
+            background: blue;
+            position: absolute;
+        }
+    </style>
+    <script>
+        let col = 'black';
+        function blue(){
+            col = 'blue'};
+        function purple(){col = 'purple'};
+        function green(){col = 'green'};
+
+        window.addEventListener('click', event => {
+            let dot = document.createElement('div');
+            dot.className = 'dot';
+            dot.style.background = col;
+            dot.style.left = (event.pageX - 4) + 'px';
+            dot.style.top = (event.pageY - 4) + 'px';
+            document.body.appendChild(dot);
+        })
+    </script>
+</body>
+</html>
